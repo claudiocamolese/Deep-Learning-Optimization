@@ -1,4 +1,4 @@
-# Numerical-optimization
+# Numerical optimization for large scale problems
 This repository contains the code for the test of convergence of three different functions using both Nelder Mead and Modified Newton methods.
 Nelder Mead is performed with $n=10,25,50$ dimensions.
 Modified Newton is performed with $n=1e^3$,$1e^4$,$1e^5$ dimensions.
