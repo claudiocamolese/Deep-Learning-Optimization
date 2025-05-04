@@ -5,22 +5,10 @@ Modified Newton is performed with $n=1e^3$,$1e^4$,$1e^5$ dimensions.
 
 ## Nelder-Mead Method
 
-- **Reflection**:
-  $$
-  x_r = \bar{x} + \alpha(\bar{x} - x_h)
-  $$
-- **Expansion**:
-  $$
-  x_e = \bar{x} + \gamma(x_r - \bar{x})
-  $$
-- **Contraction**:
-  $$
-  x_c = \bar{x} + \rho(x_h - \bar{x})
-  $$
-- **Reduction**:
-  $$
-  x_i = x_l + \sigma(x_i - x_l), \quad \forall i \neq l
-  $$
+- **Reflection**: $x_r = \bar{x} + \alpha(\bar{x} - x_h)$
+- **Expansion**:  $x_e = \bar{x} + \gamma(x_r - \bar{x})$
+- **Contraction**: $x_c = \bar{x} + \rho(x_h - \bar{x})$
+- **Reduction**: $x_i = x_l + \sigma(x_i - x_l), \quad \forall i \neq l$
 
 Where:
 - $\bar{x}$ is the centroid of the simplex excluding the worst point $x_h$
