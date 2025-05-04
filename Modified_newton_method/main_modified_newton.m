@@ -13,8 +13,7 @@ rng(random_seed)
 % Menu configuration
 [f, x0, grad_f, Hess_f, c1, mode, opts, title_function, choice, prec_choice]= menu_modified(h, type);
 
-% Modified newton method on rosenbrock function in two different starting
-% point
+% Modified newton method on rosenbrock function in two different starting point
 rosenbrock([1.2; 1.2], 100, tolgrad, 1e-4, rho, btmax, delta, "smallestreal", struct(), prec_choice);
 rosenbrock([-1.2; 1], 100, tolgrad, 1e-4, rho, btmax, delta, "smallestreal", struct(), prec_choice);
 
